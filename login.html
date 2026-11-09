@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - BOOKSPACE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="login">
+
+    <div class="login-box">
+
+        <h1>BOOKSPACE</h1>
+
+        <p class="subtitle">Online Book Store</p>
+
+        <form id="formLogin">
+
+            <label>Email</label>
+            <input type="email" id="email" required
+                placeholder="Masukkan email">
+
+            <label>Password</label>
+            <input type="password" id="password" required
+                placeholder="Masukkan password">
+
+            <button type="submit" style="width:100%">
+                Login
+            </button>
+
+        </form>
+
+        <p style="margin-top:20px">
+            <a class="link" onclick="bukaModal('modalReset')">
+                Lupa Password?
+            </a>
+        </p>
+
+        <p>
+            Belum punya akun?
+            <a class="link" onclick="bukaModal('modalDaftar')">
+                Daftar Sekarang
+            </a>
+        </p>
+
+        <hr style="margin:20px 0">
+
+        <small>
+            Demo Admin: siti@gmail.com / siti123
+        </small>
+
+    </div>
+
+
+    <!-- MODAL DAFTAR -->
+
+    <div class="modal" id="modalDaftar">
+
+        <div class="modal-content">
+
+            <span class="modal-close"
+                onclick="tutupModal('modalDaftar')">&times;</span>
+
+            <h2>Daftar Akun</h2>
+
+            <form id="formDaftar">
+
+                <label>Nama Lengkap</label>
+                <input type="text" id="daftarNama" required>
+
+                <label>Email</label>
+                <input type="email" id="daftarEmail" required>
+
+                <label>Password</label>
+                <input type="password" id="daftarPassword" required>
+
+                <label>Konfirmasi Password</label>
+                <input type="password" id="daftarKonfirmasi" required>
+
+                <button type="submit">Daftar</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- MODAL RESET PASSWORD -->
+
+    <div class="modal" id="modalReset">
+
+        <div class="modal-content">
+
+            <span class="modal-close"
+                onclick="tutupModal('modalReset')">&times;</span>
+
+            <h2>Reset Password</h2>
+
+            <form id="formReset">
+
+                <label>Email Terdaftar</label>
+                <input type="email" id="resetEmail" required>
+
+                <label>Password Baru</label>
+                <input type="password" id="resetPassword" required>
+
+                <label>Konfirmasi Password Baru</label>
+                <input type="password" id="resetKonfirmasi" required>
+
+                <button type="submit">Ubah Password</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

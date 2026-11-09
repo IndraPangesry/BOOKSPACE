@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Pesanan - BOOKSPACE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="laporan">
+
+    <nav>
+        <div class="logo">BOOKSPACE</div>
+
+        <div class="menu">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="stok.html">Katalog</a>
+            <a href="checkout.html">Checkout</a>
+            <a href="tracking.html">Tracking</a>
+            <a href="laporan.html">Laporan</a>
+            <a href="history.html">Riwayat</a>
+            <a href="#" class="logout">Logout</a>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <h1>Laporan Pesanan</h1>
+
+        <div class="card">
+
+            <p>
+                Admin dapat memperbarui status pesanan langsung dari tabel ini.
+            </p>
+
+            <div style="overflow-x:auto">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nomor DO</th>
+                            <th>Nama Pelanggan</th>
+                            <th>Buku</th>
+                            <th>Jumlah</th>
+                            <th>Total</th>
+                            <th>Status / Aksi</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tabelLaporan"></tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

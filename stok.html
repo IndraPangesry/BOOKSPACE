@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Buku - BOOKSPACE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="stok">
+
+    <nav>
+        <div class="logo">BOOKSPACE</div>
+
+        <div class="menu">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="stok.html">Katalog</a>
+            <a href="checkout.html">Checkout</a>
+            <a href="tracking.html">Tracking</a>
+            <a href="laporan.html">Laporan</a>
+            <a href="history.html">Riwayat</a>
+            <a href="#" class="logout">Logout</a>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <h1>Katalog dan Stok Buku</h1>
+
+        <p id="infoUser" style="display:none;margin-bottom:20px">
+            Kamu login sebagai User. Katalog dapat dilihat, tetapi hanya Admin
+            yang dapat mengubah data buku.
+        </p>
+
+        <div class="card">
+
+            <h2>Tambah Buku Baru</h2>
+
+            <form id="formBuku">
+
+                <label>Kode Buku</label>
+                <input type="text" id="kode" required>
+
+                <label>Nama Buku</label>
+                <input type="text" id="namaBuku" required>
+
+                <label>Jenis Buku</label>
+                <input type="text" id="jenis" required>
+
+                <label>Edisi</label>
+                <input type="text" id="edisi" required>
+
+                <label>Harga</label>
+                <input type="number" id="harga" min="1" required>
+
+                <label>Stok</label>
+                <input type="number" id="stok" min="0" required>
+
+                <button type="submit">Tambah Buku</button>
+
+            </form>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>Daftar Katalog</h2>
+
+            <div style="overflow-x:auto">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Cover</th>
+                            <th>Kode</th>
+                            <th>Nama Buku</th>
+                            <th>Jenis</th>
+                            <th>Edisi</th>
+                            <th>Harga</th>
+                            <th>Stok</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tabelBuku"></tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- MODAL EDIT -->
+
+    <div class="modal" id="modalEdit">
+
+        <div class="modal-content">
+
+            <span class="modal-close"
+                onclick="tutupModal('modalEdit')">&times;</span>
+
+            <h2>Edit Data Buku</h2>
+
+            <form id="formEditBuku">
+
+                <input type="hidden" id="editKodeLama">
+
+                <label>Nama Buku</label>
+                <input type="text" id="editNama" required>
+
+                <label>Jenis Buku</label>
+                <input type="text" id="editJenis" required>
+
+                <label>Edisi</label>
+                <input type="text" id="editEdisi" required>
+
+                <label>Harga</label>
+                <input type="number" id="editHarga" min="1" required>
+
+                <label>Stok</label>
+                <input type="number" id="editStok" min="0" required>
+
+                <button type="submit">Simpan Perubahan</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

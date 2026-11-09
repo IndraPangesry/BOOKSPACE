@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - BOOKSPACE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="dashboard">
+
+    <nav>
+        <div class="logo">BOOKSPACE</div>
+
+        <div class="menu">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="stok.html">Katalog</a>
+            <a href="checkout.html">Checkout</a>
+            <a href="tracking.html">Tracking</a>
+            <a href="laporan.html">Laporan</a>
+            <a href="history.html">Riwayat</a>
+            <a href="#" class="logout">Logout</a>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="card">
+            <h1>Dashboard</h1>
+
+            <h2 id="sapaan"></h2>
+
+            <p>
+                Selamat datang di BOOKSPACE Online Book Store.
+            </p>
+
+            <p>
+                Akun:
+                <b class="nama-user"></b>
+            </p>
+        </div>
+
+        <div class="dashboard-grid">
+
+            <div class="dashboard-item">
+                <h3>Total Buku</h3>
+                <div class="stat-number" id="jumlahBuku">0</div>
+            </div>
+
+            <div class="dashboard-item">
+                <h3>Total Pesanan</h3>
+                <div class="stat-number" id="jumlahPesanan">0</div>
+            </div>
+
+            <div class="dashboard-item">
+                <h3>Total Transaksi</h3>
+                <div class="stat-number" id="jumlahTransaksi">0</div>
+            </div>
+
+        </div>
+
+        <div class="card" style="margin-top:25px">
+
+            <h2>Menu Utama</h2>
+
+            <div class="dashboard-grid">
+
+                <div class="dashboard-item">
+                    <h3>📚 Katalog</h3>
+                    <a href="stok.html">Buka Katalog</a>
+                </div>
+
+                <div class="dashboard-item">
+                    <h3>🛒 Checkout</h3>
+                    <a href="checkout.html">Buat Pesanan</a>
+                </div>
+
+                <div class="dashboard-item">
+                    <h3>🚚 Tracking</h3>
+                    <a href="tracking.html">Lacak Pesanan</a>
+                </div>
+
+                <div class="dashboard-item">
+                    <h3>📋 Laporan</h3>
+                    <a href="laporan.html">Lihat Laporan</a>
+                </div>
+
+                <div class="dashboard-item">
+                    <h3>📜 Riwayat</h3>
+                    <a href="history.html">Lihat Riwayat</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

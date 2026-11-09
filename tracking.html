@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracking - BOOKSPACE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="tracking">
+
+    <nav>
+        <div class="logo">BOOKSPACE</div>
+
+        <div class="menu">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="stok.html">Katalog</a>
+            <a href="checkout.html">Checkout</a>
+            <a href="tracking.html">Tracking</a>
+            <a href="laporan.html">Laporan</a>
+            <a href="history.html">Riwayat</a>
+            <a href="#" class="logout">Logout</a>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <h1>Tracking Pengiriman</h1>
+
+        <div class="card">
+
+            <form id="formTracking">
+
+                <label>Nomor Delivery Order</label>
+
+                <input type="text"
+                    id="nomorDO"
+                    placeholder="Masukkan nomor DO"
+                    required>
+
+                <button type="submit">Lacak Pesanan</button>
+
+            </form>
+
+            <p style="margin-top:15px">
+                Contoh nomor tracking asli: 20230012 atau 20230013.
+            </p>
+
+        </div>
+
+        <div class="card" id="hasilTracking">
+
+            Masukkan nomor DO untuk melihat informasi pengiriman.
+
+        </div>
+
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
